@@ -1,5 +1,8 @@
 $(function(){  
     $('#app').click(function(){
-        console.log('app')
+        $.get( "../../html/index.html", function( data ) {
+            $( ".app" ).html( data );
+            console.log(data);
+        });
     })
 })  
