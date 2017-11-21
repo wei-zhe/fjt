@@ -1,4 +1,4 @@
-# NUXT --GitHub-- PAGES
+# --GitHub-- PAGES
 
 This is the website where I like girls
 
