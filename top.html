@@ -1,3 +1,13 @@
 <div class="top">
     TOP
 </div>
+<script>
+    $(function(){  
+        $('.top').bind('click',function(){
+            $.get( "home.html", function( data ) {
+                console.log(data);
+                $( "#app" ).html( data );
+            });
+        })
+    }) 
+</script>
