@@ -2,6 +2,6 @@
 
 This is the website where I like girls
 
-https://nuxtjs.org/guide/assets#static
+https://wei-zhe.github.io/fjt/
 
 **personal blog**
