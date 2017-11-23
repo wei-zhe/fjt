@@ -2,3 +2,8 @@ body{
     margin: 0;
     font-size: 1rem; 
 }
+#app{
+    width: 1200px;
+    margin: 0 auto;
+    background: #b0e2fb;
+}
