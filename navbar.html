@@ -1,0 +1,32 @@
+<style>
+    .navbar{
+        display: flex;
+        width: 1200px;
+        height: 50px;
+    }
+    .navbar > span{
+        min-width: 30px;
+        height: 30px;
+        border-radius: 10px; 
+    }    
+</style>
+<div class="navbar">
+    <div class="homes">home</div>
+    <div class="top">index</div>
+</div>
+<script>
+    $(function(){
+        $(".navbar .homes").click(function(){
+            $.get( "home.html", function( data ) {
+                console.log(data);
+                $( "#app" ).html( data );
+            });
+        });
+        $(".navbar .top").click(function(){
+            $.get( "top.html", function( data ) {
+                console.log(data);
+                $( "#app" ).html( data );
+            });
+        });
+    })
+</script>
