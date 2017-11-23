@@ -29,13 +29,11 @@
     $(function(){
         $(".navbar .homes").click(function(){
             $.get( "home.html", function( data ) {
-                console.log(data);
                 $( "#app" ).html( data );
             });
         });
         $(".navbar .top").click(function(){
             $.get( "top.html", function( data ) {
-                console.log(data);
                 $( "#app" ).html( data );
             });
         });
