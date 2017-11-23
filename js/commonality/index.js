@@ -1,8 +1,8 @@
 $(function(){
-    var app_height = document.body.clientHeight - 50;
+    var app_height = window.innerHeight - 50;
     console.log(app_height, 'app_height')
     $('#app').css({
-        'min-hieght': app_height,
+        'min-height': app_height,
     }) 
     $.get( "navbar.html", function( data ) {
         $( "#navs" ).html( data );
