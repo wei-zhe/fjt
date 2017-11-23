@@ -11,6 +11,8 @@
         padding: 10px 0;
         align-items: center;
         background: #71c9ecd6;
+        width: 99%;
+        margin: 0 auto;
     }
     #app .homes .navbar > span{
         margin: 0 5px;
@@ -23,13 +25,19 @@
         border-bottom: 1px solid #ddd;
         color: #fff;
     }
+    #svg{
+        height: 500px;
+        width: 99%;
+        margin: 0 auto;
+        background: #fff;
+    }
 </style>
 <div class="homes">
     <div class="navbar">
         <span class="svgswitch">SVG</span> 
         <span class="top">TOP</span> 
     </div>
-    <div id="svg"></div>
+    <svg id="svg"></svg>
 </div>
 <script>
     $(function(){
@@ -41,6 +49,15 @@
         var svgdata = null;
         $('#app .svgswitch').click(function(){
             svgdata = Snap('#svg')
+            var bigCircle = svgdata.circle(150, 150, 100);
+            // By default its black, lets change its attributes
+            bigCircle.attr({
+                fill: "#bada55",
+                stroke: "#000",
+                strokeWidth: 5
+            });
+            // Now lets create another small circle:
+            var smallCircle = svgdata.circle(100, 150, 70);
         })
     })
 </script>
