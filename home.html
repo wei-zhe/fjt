@@ -5,14 +5,30 @@
         border-radius: 100%;
         background: rgba(255, 0, 0, 0.315);
     }
+    #app .homes .navbar{
+        display: flex;
+        width: 100%;
+        height: 20px;
+        margin-top: 30px;
+        justify-content: center;
+        padding: 10px 0;
+        align-items: center;
+        background: #77777bd6;
+    }
+    #app .homes .navbar > span{
+        height: 30px;
+    }    
 </style>
 <div class="homes">
-    <div class="svgswitch">SVG</div> 
+    <div class="navbar">
+        <span class="svgswitch">SVG</span> 
+        <span class="top">TOP</span> 
+    </div>
     <div id="svg"></div>
 </div>
 <script>
     $(function(){
-        $("#app .homes").click(function(){
+        $("#app .homes .top").click(function(){
             $.get( "top.html", function( data ) {
                 $( "#app" ).html( data );
             });
