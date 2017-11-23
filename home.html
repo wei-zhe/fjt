@@ -50,7 +50,7 @@
         var svgdata = null;
         $('#app .svgswitch').click(function(){
             svgdata = Snap('#svg')
-            console.log(svgdata)
+            console.log(svgdata.getBBox())
             var bigCircle = svgdata.circle(150, 150, 100);
             bigCircle.attr({
                 fill: "#bada55",
