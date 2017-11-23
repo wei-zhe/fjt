@@ -7,7 +7,8 @@
     }
 </style>
 <div class="homes">
-        HOME 
+    <div class="svgswitch">SVG</div> 
+    <div id="svg"></div>
 </div>
 <script>
     $(function(){
@@ -16,5 +17,9 @@
                 $( "#app" ).html( data );
             });
         });
+        var svgdata = null;
+        $('#app .svgswitch').cliick(function(){
+            svgdata = snap('#svg')
+        })
     })
 </script>
