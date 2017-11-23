@@ -7,7 +7,7 @@ $(function(){
     $.get( "navbar.html", function( data ) {
         $( "#navs" ).html( data );
     });
-    $.get( "top.html", function( data ) {
+    $.get( "home.html", function( data ) {
         $( "#app" ).html( data );
     });  
 })  
