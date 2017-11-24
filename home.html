@@ -53,8 +53,8 @@
         var smallCircle = svgdata.circle(100, 150, 70);
         bigCircle.attr({
             fill: "#bada55",
-            stroke: "#000",
-            strokeWidth: 5
+            stroke: "#5f534f",
+            strokeWidth: 1
         }).click(function(data){
             bigCircle.animate({r: 50}, 1000, mina.backin, function(){
                 smallCircle.animate({cx: 594, cy: 100}, 1000, mina.elastic, function(){
