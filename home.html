@@ -57,7 +57,15 @@
                 stroke: "#000",
                 strokeWidth: 5
             }).click(function(data){
-                console.log(data, '<---this')
+                data.animate({
+                                r:    50,
+                                fill: '#ddd'
+                            }, 
+                            300, 
+                            mina.backin, 
+                            function(){
+                                console.log('over')
+                })
             });
             var smallCircle = svgdata.circle(100, 150, 70);
         })
