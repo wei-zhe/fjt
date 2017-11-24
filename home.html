@@ -58,10 +58,10 @@
                 stroke: "#000",
                 strokeWidth: 5
             }).click(function(data){
-                bigCircle.animate({r: 50}, 1000, mina.backin, function(){
-                    smallCircle.animate({cx: 594}, 1000, mina.backin, function(){
-                        smallCircle.animate({cy: 250}, 1000, mina.backin, function(){
-                            smallCircle.animate({r: 25}, 1000, mina.backin, function(){
+                bigCircle.animate({r: 50}, 1000, mina.backin(1), function(){
+                    smallCircle.animate({cx: 594}, 1000, mina.elastic(1), function(){
+                        smallCircle.animate({cy: 250}, 1000, mina.bounce(1), function(){
+                            smallCircle.animate({r: 25}, 1000, mina.linear(1) , function(){
                                 console.log('结束')
                             })
                         })
