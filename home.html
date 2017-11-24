@@ -52,17 +52,17 @@
         var bigCircle = svgdata.circle(594, 250, 100);
         var smallCircle = svgdata.circle(100, 150, 70);
         bigCircle.attr({
-            fill: "#bada55",
-            stroke: "#5f534f",
+            fill: "#9cdbc0",
+            stroke: "#5f535f",
             strokeWidth: 1
         }).click(function(data){
             bigCircle.animate({r: 50}, 1000, mina.backin, function(){
                 smallCircle.animate({cx: 594, cy: 100}, 1000, mina.elastic, function(){
-                    smallCircle.animate({cy: 250}, 1000, mina.bounce, function(){
-                        smallCircle.animate({r: 25}, 1000, mina.linear, function(){
-                            console.log('结束')
-                        })
-                    })
+                    // smallCircle.animate({cy: 250}, 1000, mina.bounce, function(){
+                    //     smallCircle.animate({r: 25}, 1000, mina.linear, function(){
+                    //         console.log('结束')
+                    //     })
+                    // })
                 })
             });
         });
