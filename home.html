@@ -57,10 +57,7 @@
                 stroke: "#000",
                 strokeWidth: 5
             }).click(function(data){
-                data.animate({
-                                r:    50,
-                                fill: '#ddd'
-                            },30000)
+                bigCircle.animate({r: 50}, 1000);
             });
             var smallCircle = svgdata.circle(100, 150, 70);
         })
