@@ -50,19 +50,19 @@
         var selectdata = null;
         svgdata = Snap('#svg')
         var bigCircle = svgdata.circle(594, 250, 100);
-        var smallCircle = svgdata.circle(100, 150, 70);
+        var smallCircle = svgdata.circle(100, 150, 70).attr({fill: '#f2232380'});
         bigCircle.attr({
             fill: "#156a95",
             stroke: "#5f535f",
             strokeWidth: 1
         }).click(function(data){
             bigCircle.animate({r: 50}, 1000, mina.backin, function(){
-                smallCircle.animate({cx: 594, cy: 100}, 1000, mina.linear, function(){
-                    // smallCircle.animate({cy: 250}, 1000, mina.bounce, function(){
-                    //     smallCircle.animate({r: 25}, 1000, mina.linear, function(){
-                    //         console.log('结束')
-                    //     })
-                    // })
+                smallCircle.animate({r: 20}, 1000, mina.backout, function(){
+                    smallCircle.animate({cx: 594, cy: 100}, 1000, mina.linear, function(){
+                        smallCircle.animate({cy: 250}, 1000, mina.bounce, function(){
+                            console.log('结束')
+                        })
+                    })
                 })
             });
         });
