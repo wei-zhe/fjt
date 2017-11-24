@@ -52,16 +52,22 @@
         $('#app .svgswitch').click(function(){
             svgdata = Snap('#svg')
             var bigCircle = svgdata.circle(594, 250, 100);
+            var smallCircle = svgdata.circle(100, 150, 70);
             bigCircle.attr({
                 fill: "#bada55",
                 stroke: "#000",
                 strokeWidth: 5
             }).click(function(data){
                 bigCircle.animate({r: 50}, 1000, mina.backin, function(){
-                    console.log('结束')
+                    smallCircle.animate({cx: 594}, 1000, mina.backin, function(){
+                        smallCircle.animate({cy: 250}, 1000, mina.backin, function(){
+                            smallCircle.animate({r: 25}, 1000, mina.backin, function(){
+                                console.log('结束')
+                            })
+                        })
+                    })
                 });
             });
-            var smallCircle = svgdata.circle(100, 150, 70);
         })
     })
 </script>
