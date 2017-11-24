@@ -57,7 +57,9 @@
                 stroke: "#000",
                 strokeWidth: 5
             }).click(function(data){
-                bigCircle.animate({r: 50}, 1000, mina.backin);
+                bigCircle.animate({r: 50}, 1000, mina.backin, function(){
+                    console.log('结束')
+                });
             });
             var smallCircle = svgdata.circle(100, 150, 70);
         })
