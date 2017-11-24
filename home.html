@@ -57,7 +57,7 @@
             strokeWidth: 5
         }).click(function(data){
             bigCircle.animate({r: 50}, 1000, mina.backin, function(){
-                smallCircle.animate({cx: 594}, 1000, mina.elastic, function(){
+                smallCircle.animate({cx: 594, cy: 100}, 1000, mina.elastic, function(){
                     smallCircle.animate({cy: 250}, 1000, mina.bounce, function(){
                         smallCircle.animate({r: 25}, 1000, mina.linear, function(){
                             console.log('结束')
