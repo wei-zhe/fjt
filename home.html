@@ -47,10 +47,11 @@
                 $( "#app" ).html( data );
             });
         });
-        var svgdata = null;
+        var svgdata = null; // y = 250 ; x = 594
+        var selectdata = null;
         $('#app .svgswitch').click(function(){
             svgdata = Snap('#svg')
-            var bigCircle = svgdata.circle(0, 0, 100);
+            var bigCircle = svgdata.circle(594, 250, 100);
             console.log(bigCircle.getBBox())
             bigCircle.attr({
                 fill: "#bada55",
