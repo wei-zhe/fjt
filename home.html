@@ -52,11 +52,12 @@
         $('#app .svgswitch').click(function(){
             svgdata = Snap('#svg')
             var bigCircle = svgdata.circle(594, 250, 100);
-            console.log(bigCircle.getBBox())
             bigCircle.attr({
                 fill: "#bada55",
                 stroke: "#000",
                 strokeWidth: 5
+            }).click(function(this){
+                console.log(this, '<---this')
             });
             var smallCircle = svgdata.circle(100, 150, 70);
         })
