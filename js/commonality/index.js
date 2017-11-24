@@ -1,6 +1,5 @@
 $(function(){
     var app_height = window.innerHeight - 50;
-    console.log(app_height, 'app_height')
     $('#app').css({
         'min-height': app_height,
     }) 
