@@ -1,9 +1,12 @@
 body{
     margin: 0;
-    font-size: 1rem; 
+    font-size: 14px;
+    color: rgb(207, 209, 205); 
 }
 #app{
-    width: 1200px;
+    width: 750px;
     margin: 0 auto;
     background: #b0e2fb;
+    font-family: \\5FAE\8F6F\96C5\9ED1,Helvetica,Tahoma,Arial,Microsoft Yahei,Hiragino Sans GB,Heiti SC,WenQuanYi Micro Hei,sans-serif;
+    -webkit-font-smoothing: antialiased;
 }
