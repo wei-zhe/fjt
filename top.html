@@ -2,13 +2,30 @@
     #app .top .homebtn{
         height: 50px;
         background: rgba(0, 0, 255, 0.582);
+        text-align: center;
     }
+    #app .top .body{
+        position: relative;
+        height: 700px;
+        background: rgba(255, 0, 200, 0.418);
+    }    
+    #app .top .body .headimg{
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        width: 50px;
+        height: 50px;
+        background: url(../img/fjt.jpg);
+    }    
 </style>
 <div class="top">
     <div class="homebtn">
         home
     </div>
     <div class="body">
+        <div class="headimg"></div>
     </div>
 </div>
 <script>
