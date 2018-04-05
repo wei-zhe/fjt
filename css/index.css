@@ -1,12 +1,27 @@
 body{
-    margin: 0;
-    font-size: 14px;
-    color: rgb(229, 247, 212, 0.99); 
+  margin: 0;
+  font-size: 14px;
+  color: rgb(229, 247, 212, 0.99); 
+  font-family: \\5FAE\8F6F\96C5\9ED1,Helvetica,Tahoma,Arial,Microsoft Yahei,Hiragino Sans GB,Heiti SC,WenQuanYi Micro Hei,sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+#navs{
+  position: fixed;
+  width: 750px;
+  height: 150px;
+  top: 5%;
+  left: 0;
+  right: 0;
+  margin: o auto;
 }
 #app{
-    width: 750px;
-    margin: 0 auto;
-    background: #b0e2fb;
-    font-family: \\5FAE\8F6F\96C5\9ED1,Helvetica,Tahoma,Arial,Microsoft Yahei,Hiragino Sans GB,Heiti SC,WenQuanYi Micro Hei,sans-serif;
-    -webkit-font-smoothing: antialiased;
+  position: fixed;
+  width: 750px;
+  margin: 0 auto;
+  top: 7%;
+  padding-top: 150px;  
+  left: 0;
+  right: 0;
+  margin: o auto;
+  background: #b0e2fb;
 }
