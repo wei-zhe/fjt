@@ -3,29 +3,29 @@
         display: flex;
         width: 750px;
         height: 50px;
-        justify-content: center;
+        justify-content: left;
         margin: 0 auto;
         align-items: center;
         background: #77777bd6;
     }
-    #navs .navbar > span{
-        font-size: 16px;
-        min-width: 30px;
-        cursor: pointer;
-        text-align: center;
-        line-height: 30px;
-        height: 30px;
-        padding: 0 5px; 
-        margin: 0 5px;
+    #navs .navbar .headimg{
+        width: 108px;
+        height: 108px;
+        background: url(img/fjt.jpg);
+        background-repeat: no-repeat;
+        background-size: 108px 192px;
+        background-position-y: -23px;
+        border-radius: 100%;
+        box-shadow: 0px 5px 16px rgba(255, 0, 0, 0.92);
         transition: all 0.3s;
-    } 
-    #navs .navbar > span:hover{
-        color: #fff;
-        background: #7cd7f0;    
-    }
+    }    
+    #navs .navbar .headimg:hover{
+        background-position-y: -18px;
+        box-shadow: 0px 10px 20px rgba(4, 255, 0, 0.98);
+    }    
 </style>
 <div class="navbar">
-    <span class="homes">home</span>
+    <div class="homes"></div>
     <span class="top">top</span>
 </div>
 <script>
