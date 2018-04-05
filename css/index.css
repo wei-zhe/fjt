@@ -12,7 +12,8 @@ body{
   top: 5%;
   left: 0;
   right: 0;
-  margin: o auto;
+  z-index: 1;
+  margin: 0 auto;
 }
 #app{
   position: fixed;
@@ -23,6 +24,6 @@ body{
   padding-top: 150px;  
   left: 0;
   right: 0;
-  margin: o auto;
-  background: #b0e2fb;
+  margin: 0 auto;
+  z-index: 0;
 }
