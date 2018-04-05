@@ -40,33 +40,12 @@
     <div class="navbar">
         <span class="top">傻瓜点这里呀this</span> 
     </div>
-    <svg id="svg"></svg>
 </div>
 <script>
     $(function(){
         $("#app .homes .top").click(function(){
             $.get( "./banner/index.html", function( data ) {
                 $( "#app" ).html( data );
-            });
-        });
-        var svgdata = null; // y = 250 ; x = 594
-        var selectdata = null;
-        svgdata = Snap('#svg')
-        var smallCircle = svgdata.circle(370, 50, 40).attr({fill: '#fda6ff73'});
-        var bigCircle = svgdata.circle(370, 250, 100);
-        bigCircle.attr({
-            fill: "#de3636ba",
-            stroke: "#5f535f",
-            strokeWidth: 1
-        }).click(function(data){
-            bigCircle.animate({r: 50}, 1000, mina.backin, function(){
-                smallCircle.animate({r: 30}, 1000, mina.backout, function(){
-                    smallCircle.animate({cy: 100, r: 15}, 1000, mina.elastic, function(){
-                        smallCircle.animate({cy: 250}, 1000, mina.bounce, function(){
-                            console.log(bigCircle, '结束', smallCircle)
-                        })
-                    })
-                })
             });
         });
     })
