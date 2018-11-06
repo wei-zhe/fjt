@@ -3,7 +3,7 @@ node_modules
 /dist
 fjt
 testC
-vscode
+.vscode
 
 # local env files
 .env.local
